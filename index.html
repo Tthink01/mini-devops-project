@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>แนะนำตัวนักศึกษา 5 คน</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="title">
+        <div class="logo" aria-hidden="true">U</div>
+        <div>
+          <h1>หน้าแนะนำตัวนักศึกษา</h1>
+          <p class="subtitle">ข้อมูล: ชื่อ-รหัสนักศึกษา • ประวัติสั้น ๆ • รูปภาพ • ความสนใจ</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="toolbar" role="search">
+      <label class="input" aria-label="ค้นหาโดยชื่อหรือรหัส">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15.5 15.5L21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="10.5" cy="10.5" r="6.5" stroke="currentColor" stroke-width="2"/></svg>
+        <input id="q" type="search" placeholder="ค้นหาชื่อหรือรหัสนักศึกษา (UI อย่างเดียว)" />
+      </label>
+      <select class="select" aria-label="กรองตามความสนใจ">
+        <option value="">สวัสดีครับ</option>
+        <option>Frontend</option>
+        <option>Data</option>
+        <option>Game Dev</option>
+        <option>AI/ML</option>
+        <option>IoT</option>
+      </select>
+    </div>
+
+    <main class="grid">
+      <!-- Card 1 -->
+      <article class="card" tabindex="0">
+        <img class="cover" src="https://picsum.photos/seed/student1/800/450" alt="ภาพนักศึกษา 1" />
+        <div class="content">
+          <h2 class="name">กิตติพงศ์ ใจดี <span class="id">651234001</span></h2>
+          <p class="bio">นักศึกษาวิศวกรรมซอฟต์แวร์ สนใจพัฒนาเว็บแบบ Full‑stack ชอบออกแบบ UI ที่ใช้งานง่าย มีประสบการณ์ทำโปรเจกต์ระบบจองห้องเรียนของคณะ</p>
+          <div class="tags" aria-label="ความสนใจ">
+            <span class="tag">Frontend</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">UI/UX</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="card" tabindex="0">
+        <img class="cover" src="https://picsum.photos/seed/student2/800/450" alt="ภาพนักศึกษา 2" />
+        <div class="content">
+          <h2 class="name">ชลธิชา มีสุข <span class="id">651234002</span></h2>
+          <p class="bio">กำลังสนใจสาย Data Analytics เคยทำแดชบอร์ดสรุปการลงทะเบียนเรียนด้วย Looker Studio และเขียน Python สำหรับทำความสะอาดข้อมูล</p>
+          <div class="tags" aria-label="ความสนใจ">
+            <span class="tag">Data</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="card" tabindex="0">
+        <img class="cover" src="https://picsum.photos/seed/student3/800/450" alt="ภาพนักศึกษา 3" />
+        <div class="content">
+          <h2 class="name">นภัสกร ทองแท้ <span class="id">651234003</span></h2>
+          <p class="bio">ชอบพัฒนาเกมด้วย Godot และ Unity ทำเกม 2D แนว Action‑RPG เป็นโปรเจกต์จบวิชา และสนใจออกแบบระบบบทสนทนาในเกม</p>
+          <div class="tags" aria-label="ความสนใจ">
+            <span class="tag">Game Dev</span>
+            <span class="tag">Godot</span>
+            <span class="tag">Pixel Art</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="card" tabindex="0">
+        <img class="cover" src="https://picsum.photos/seed/student4/800/450" alt="ภาพนักศึกษา 4" />
+        <div class="content">
+          <h2 class="name">พิชญา อมรชัย <span class="id">651234004</span></h2>
+          <p class="bio">สนใจปัญญาประดิษฐ์และการประยุกต์ใช้ในด้านการศึกษา ทำโปรเจกต์จำแนกวิชาที่นักศึกษาน่าจะชอบจากพฤติกรรมการเรียน</p>
+          <div class="tags" aria-label="ความสนใจ">
+            <span class="tag">AI/ML</span>
+            <span class="tag">Scikit‑learn</span>
+            <span class="tag">NLP</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="card" tabindex="0">
+        <img class="cover" src="https://picsum.photos/seed/student5/800/450" alt="ภาพนักศึกษา 5" />
+        <div class="content">
+          <h2 class="name">ศุภกิตติ์ สายชล <span class="id">651234005</span></h2>
+          <p class="bio">ชอบทำโปรเจกต์ IoT ต่อวงจรเซนเซอร์กับบอร์ดไมโครคอนโทรลเลอร์ เขียนเว็บแดชบอร์ดเล็ก ๆ เพื่อดูค่าจากอุปกรณ์แบบเรียลไทม์</p>
+          <div class="tags" aria-label="ความสนใจ">
+            <span class="tag">IoT</span>
+            <span class="tag">MicroPython</span>
+            <span class="tag">Dashboard</span>
+          </div>
+        </div>
+      </article>
+    </main>
+
+    <footer>
+      <p>ตัวอย่างหน้านี้ใช้ CSS แยกไฟล์ออกมาใน style.css</p>
+    </footer>
+  </div>
+</body>
+</html>
